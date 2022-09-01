@@ -1,13 +1,13 @@
 class Solver
-  def factorial(n)
-    
+  def factorial(number)
+    return 1 if number.zero?
   end
 
   def reverse(word)
     
   end
 
-  def fizzbuzz(n)
+  def fizzbuzz(number)
     
   end
 end
