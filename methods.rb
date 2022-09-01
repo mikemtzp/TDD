@@ -12,6 +12,16 @@ class Solver
   end
 
   def fizzbuzz(number)
-    
+    result = number.to_s
+
+    if (number % 5).zero? && (number % 3).zero?
+      result = 'fizzbuzz'
+    elsif (number % 5).zero?
+      result = 'buzz'
+    elsif (number % 3).zero?
+      result = 'fizz'
+    end
+
+    result
   end
 end
