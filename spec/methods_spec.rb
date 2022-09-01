@@ -28,4 +28,22 @@ describe Solver do
       expect(@solver.reverse('hello')).to eq('olleh')
     end
   end
+
+  context 'Fizzbuzz method test' do
+    it 'it return "fizzbuzz" when number is divisible by 5 and 3' do
+      expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+
+    it 'it return "buzz" when number is divisible by 5' do
+      expect(@solver.fizzbuzz(5)).to eq('buzz')
+    end
+
+    it 'it return "fizz" when number is divisible by 3' do
+      expect(@solver.fizzbuzz(3)).to eq('fizz')
+    end
+
+    it 'it return the number when number is not divisible by 3 and 5' do
+      expect(@solver.fizzbuzz(16)).to eq('16')
+    end
+  end
 end
